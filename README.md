@@ -7,6 +7,9 @@ Investigating the [MALT dataset](https://huggingface.co/datasets/metr-evals/malt
 
 ```sh
 uv sync
+# strip notebook outputs on commit (keeps MALT transcripts out of the repo)
+git config filter.nbstrip.clean "python3 scripts/strip_nb_outputs.py"
+git config filter.nbstrip.smudge cat
 ```
 
 ## Getting the data

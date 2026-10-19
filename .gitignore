@@ -6,3 +6,6 @@ __pycache__/
 
 # Downloaded datasets are large; fetch them with scripts/download_malt.py
 data/
+
+# Generated outputs (e.g. example transcripts)
+outputs/
